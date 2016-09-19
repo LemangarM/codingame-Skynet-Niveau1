@@ -39,12 +39,12 @@ function FindLinkToSever(links_nodes, gateways, SI)
 {
 	var res = new Object();
 	var linkIndex;
-	for (var i = 0; i < gateways.length; i++)
+	for (var i = 0; var1 = gateways.length;i < var1; i++)
 	{
 		var gateway = gateways[i],
 			gateway_links = links_nodes[gateway];
 
-		for (var j = 0; j < gateway_links.length; j++)
+		for (var j = 0; var2 = gateway_links.length;j < var2; j++)
 		{
 			var node = gateway_links[j];
 
@@ -54,7 +54,8 @@ function FindLinkToSever(links_nodes, gateways, SI)
 
 			if (node == SI) // Skynet agent near the gateway
 			{
-				break;
+				var1=i;
+				var2=j;
 			}
 		}
 	}
