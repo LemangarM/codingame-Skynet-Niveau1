@@ -39,12 +39,12 @@ function FindLinkToSever(links_nodes, gateways, SI)
 {
 	var res = new Object();
 	var linkIndex;
-	for (var i = 0; var1 = gateways.length;i < var1; i++)
+	for (var i = 0, var1 = gateways.length;i < var1; i++)
 	{
 		var gateway = gateways[i],
 			gateway_links = links_nodes[gateway];
 
-		for (var j = 0; var2 = gateway_links.length;j < var2; j++)
+		for (var j = 0, var2 = gateway_links.length;j < var2; j++)
 		{
 			var node = gateway_links[j];
 
